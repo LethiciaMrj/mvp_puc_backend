@@ -1,0 +1,85 @@
+[2024-04-19 02:17:28,858] INFO _log() L96   127.0.0.1 - - [19/Apr/2024 02:17:28] "DELETE /consulta?paciente=ll HTTP/1.1" 200 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-19 02:17:40,723] ERROR log_exception() L838  Exception on /consulta [GET] - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py L838 
+Traceback (most recent call last):
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\app.py", line 106, in get_consulta
+    id_da_consulta = query.id
+                     ^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\pydantic\main.py", line 792, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'ConsultaBuscaSchema' object has no attribute 'id'
+[2024-04-19 02:17:40,813] INFO _log() L96   127.0.0.1 - - [19/Apr/2024 02:17:40] "[35m[1mGET /consulta HTTP/1.1[0m" 500 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-19 02:19:04,754] INFO _log() L96   127.0.0.1 - - [19/Apr/2024 02:19:04] "POST /consulta HTTP/1.1" 200 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-19 02:19:26,050] INFO _log() L96   127.0.0.1 - - [19/Apr/2024 02:19:26] "OPTIONS /consulta?paciente=bgbg HTTP/1.1" 200 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-19 02:19:26,069] INFO _log() L96   127.0.0.1 - - [19/Apr/2024 02:19:26] "DELETE /consulta?paciente=bgbg HTTP/1.1" 200 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-19 02:19:47,920] ERROR log_exception() L838  Exception on /consulta [GET] - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py L838 
+Traceback (most recent call last):
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\app.py", line 106, in get_consulta
+    id_da_consulta = query.id
+                     ^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\pydantic\main.py", line 792, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'ConsultaBuscaSchema' object has no attribute 'id'
+[2024-04-19 02:19:47,920] INFO _log() L96   127.0.0.1 - - [19/Apr/2024 02:19:47] "[35m[1mGET /consulta HTTP/1.1[0m" 500 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-19 02:19:48,197] ERROR log_exception() L838  Exception on /consulta [GET] - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py L838 
+Traceback (most recent call last):
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\app.py", line 106, in get_consulta
+    id_da_consulta = query.id
+                     ^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\pydantic\main.py", line 792, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'ConsultaBuscaSchema' object has no attribute 'id'
+[2024-04-19 02:19:48,197] INFO _log() L96   127.0.0.1 - - [19/Apr/2024 02:19:48] "[35m[1mGET /consulta HTTP/1.1[0m" 500 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  

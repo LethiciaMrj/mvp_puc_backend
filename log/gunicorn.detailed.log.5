@@ -1,0 +1,52 @@
+[2024-04-18 15:20:07,418] ERROR log_exception() L838  Exception on /consulta [DELETE] - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py L838 
+Traceback (most recent call last):
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py", line 883, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py", line 902, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py", line 1174, in make_response
+    raise TypeError(
+TypeError: The view function for 'del_consulta' did not return a valid response. The function either returned None or ended without a return statement.
+[2024-04-18 15:20:07,450] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 15:20:07] "[35m[1mDELETE /consulta?paciente=lethi HTTP/1.1[0m" 500 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 15:20:10,587] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 15:20:10] "OPTIONS /consulta?paciente=rew HTTP/1.1" 200 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 15:20:10,602] ERROR log_exception() L838  Exception on /consulta [DELETE] - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py L838 
+Traceback (most recent call last):
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py", line 883, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py", line 902, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\flask\app.py", line 1174, in make_response
+    raise TypeError(
+TypeError: The view function for 'del_consulta' did not return a valid response. The function either returned None or ended without a return statement.
+[2024-04-18 15:20:10,602] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 15:20:10] "[35m[1mDELETE /consulta?paciente=rew HTTP/1.1[0m" 500 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:22:17,341] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:22:17] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:22:17,509] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:22:17] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:22:17,560] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:22:17] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:22:17,723] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:22:17] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:22:17,850] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:22:17] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:22:17,858] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:22:17] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:26:22,403] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:26:22] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:26:22,419] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:26:22] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:26:22,425] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:26:22] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:26:22,425] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:26:22] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:26:22,544] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:26:22] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:26:22,560] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:26:22] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:27:22,085] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:27:22] "GET /openapi/ HTTP/1.1" 200 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:27:22,100] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:27:22] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:27:22,115] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:27:22] "[36mGET /openapi/static/images/redoc.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:27:22,115] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:27:22] "[36mGET /openapi/static/images/rapidoc.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:27:22,213] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:27:22] "GET /openapi/static/images/apidoc.svg HTTP/1.1" 200 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:27:22,983] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:27:22] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:27:23,006] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:27:23] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:27:23,006] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:27:23] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 16:27:23,011] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 16:27:23] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\lethi\OneDrive\Área de Trabalho\desenvolvimento-full-stack-basico\mvp\minha_api\env\Lib\site-packages\werkzeug\_internal.py L96  
