@@ -19,5 +19,9 @@ Documentação: http://127.0.0.1:5000/openapi/
 
 ## Contribuindo
 Clone o repositório.
+Necessário ter todas as libs python instaladas
+Para executar a API basta executar:
+
+(env)$ flask run --host 0.0.0.0 --port 5000
 
 
